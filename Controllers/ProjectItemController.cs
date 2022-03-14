@@ -10,6 +10,6 @@ namespace GetShitDoneBackend.Controllers
     [Route("api/[controller]")]
     public class ProjectItemController : ControllerBase
     {
-        
+        // Hi this is Scott's Test
     }
 }
