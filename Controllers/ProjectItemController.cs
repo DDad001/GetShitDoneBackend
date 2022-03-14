@@ -7,9 +7,9 @@ using Microsoft.AspNetCore.Mvc;
 namespace GetShitDoneBackend.Controllers
 {
     [ApiController]
-    [Route("api/[controller]")]
+    [Route("[controller]")]
     public class ProjectItemController : ControllerBase
     {
-        // Hi this is Scott's Test
+        
     }
 }
