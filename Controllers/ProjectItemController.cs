@@ -73,59 +73,64 @@ namespace GetShitDoneBackend.Controllers
             return _data.GetProjectItemStatus(status);
         }
 
-        [HttpGet("GetProjectItemByMembebr/{Status}")]
-        public ProjectItemModel GetProjectItemStatus(string status)
+        [HttpGet("GetProjectItemByAMemberId/{MemberId}")]
+        public ProjectItemModel GetProjectItemByAMemberId(int memberId)
         {
-            return _data.GetProjectItemStatus(status);
+            return _data.GetProjectItemByAMemberId(memberId);
         }
 
-
-
-
-
-
-
-
-
-
-
-        [HttpGet("GetBlogItemByDate/{Date}")]
-        public ProjectItemModel GetBlogItemByDate(string date)
+        [HttpGet("GetProjectItemByAMemberUsername/{MemberUsername}")]
+        public ProjectItemModel GetProjectItemByAMemberUsername(string memberUsername)
         {
-            return _data.GetBlogItemByDate(date);
+            return _data.GetProjectItemByAMemberUsername(memberUsername);
         }
 
-
-
-
-
-
-
-
-
-        [HttpGet("GetItemsByCategory/{Category}")]
-        public IEnumerable<BlogItemModel> GetItemsByCategory(string Category)
+        [HttpGet("GetProjectItemByAMemberUsername/{MemberUsername}")]
+        public ProjectItemModel GetProjectItemByAMemberUsername(string memberUsername)
         {
-            return _data.GetItemsByCategory(Category);
+            return _data.GetProjectItemByAMemberUsername(memberUsername);
         }
 
-        [HttpGet("GetItemsByTag/{Tag}")]
-        public IEnumerable<BlogItemModel> GetItemsByTag(string Tag)
+        [HttpGet("GetDeletedProjectItems")]
+        public IEnumerable<ProjectItemModel> GetDeletedProjectItems()
         {
-            return _data.GetItemsByTag(Tag);
+            return _data.GetDeletedProjectItems();
         }
 
-        [HttpGet("GetItemsByDate/{Date}")]
-        public IEnumerable<BlogItemModel> GetItemsByDate(string Date)
+        [HttpGet("GetArchivedProjectItems")]
+        public IEnumerable<ProjectItemModel> GetArchivedProjectItems()
         {
-            return _data.GetItemsByDate(Date);
+            return _data.GetArchivedProjectItems();
         }
 
-        [HttpGet("GetPublishedItems")]
-        public IEnumerable<BlogItemModel> GetPublishedItems()
+        // This is the endpoint front end will use 
+        [HttpPost("UpdateProjectItem")]
+        public bool UpdateProjectItem(ProjectItemModel updatedProject)
         {
-            return _data.GetPublishedItems();
+            return _data.UpdateProjectItem(updatedProject);
         }
+        
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        
 
         [HttpPost("UpdateBlogItem")]
         public bool UpdateBlogItem (BlogItemModel BlogUpdate)
