@@ -36,72 +36,82 @@ namespace GetShitDoneBackend.Controllers
             return _data.GetAllTaskItems();
         }
 
-
-        [HttpGet("GetTaskItemsByeUserID/{UserID}")]
-        public IEnumerable<TaskItemModel> GetTaskItemsByUserID(int UserID)
+        // Get a TaskItem by Id
+        [HttpGet("GetTaskItemsById/{Id}")]
+        public TaskItemModel GetTaskItemsByID(int id)
         {
-            return _data.GetTaskItemsByUserID(Id);
+            return _data.GetTaskItemsById(id);
         }
 
+        // Get a LIST of TaskItems by the parent ProjectItem Id
         [HttpGet("GetTaskItemsByProjectID/{ProjectID}")]
-        public IEnumerable<TaskItemModel> GetTaskItemsByProjectID(int ProjectID)
+        public List<TaskItemModel> GetTaskItemsByProjectID(int ProjectID)
         {
-            return _data.GetTaskItemsByProjectID(UserID);
+            return _data.GetTaskItemsByProjectID(ProjectID);
         }
 
-        [HttpGet("GetTaskByTitle/{Title}")]
-        public IEnumerable<TaskItemModel> GetTaskByTitle(string Title)
+        // Get a TaskItem by the Title of TaskItem
+        [HttpGet("GetTaskItemByTitle/{Title}")]
+        public TaskItemModel GetTaskItemByTitle(string Title)
         {
-            return _data.GetTaskByTitle(Title);
+            return _data.GetTaskItemByTitle(Title);
         }
 
-        [HttpGet("GetTaskByDescription/{Description}")]
-        public List<TaskItemModel> GetTaskByDescription(string Description)
+        // Get a TaskItem by the description of a TaskItem
+        [HttpGet("GetTaskItemByDescription/{Description}")]
+        public TaskItemModel GetTaskItemByDescription(string Description)
         {
-            return _data.GetTaskByDescription(Description);
+            return _data.GetTaskItemByDescription(Description);
         }
 
-        [HttpGet("GetTaskByDateCreated/{DateCreated}")]
-        public IEnumerable<TaskItemModel> GetTaskByDateCreated(string DateCreated)
+        // Get a LIST of all TaskItems by DateCreated
+        [HttpGet("GetTaskItemsByDateCreated/{DateCreated}")]
+        public IEnumerable<TaskItemModel> GetTaskItemsByDateCreated(string DateCreated)
         {
-            return _data.GetTaskByDateCreated(DateCreated);
+            return _data.GetTaskItemsByDateCreated(DateCreated);
         }
 
-        [HttpGet("GetTaskByDueDate")]
-        public IEnumerable<TaskItemModel> GetTaskByDueDate()
+        // Get a LIST of all TaskItems by DueDate
+        [HttpGet("GetTaskItemsByDueDate/{dueDate}")]
+        public IEnumerable<TaskItemModel> GetTaskItemsByDueDate(string dueDate)
         {
-            return _data.GetTaskByDueDate();
+            return _data.GetTaskItemsByDueDate(dueDate);
         }
 
-        [HttpGet("GetTaskPriorityItems")]
-        public IEnumerable<TaskItemModel> GetTaskPriorityItems()
+        // Get a LIST of TaskItems by Priority
+        [HttpGet("GetTaskItemsByPriority/{priority}")]
+        public IEnumerable<TaskItemModel> GetTaskItemsByPriority(string priority)
         {
-            return _data.GetTaskPriorityItems();
+            return _data.GetTaskItemsByPriority(priority);
         }
 
-        [HttpGet("GetTaskAssignees")]
-        public IEnumerable<TaskItemModel> GetTaskAssignees()
+        // Get a LIST of all TaskItems by specific Assignee
+        [HttpGet("GetTaskItemsByAssignee/{assignee}")]
+        public IEnumerable<TaskItemModel> GetTaskItemsByAssignee(string assignee)
         {
-            return _data.GetTaskAssignees();
+            return _data.GetTaskItemsByAssignee(assignee);
         }
 
-        [HttpGet("GetTaskStatus")]
-        public IEnumerable<TaskItemModel> GetTaskStatus()
+        // Get a LIST of all TaskItems by Status
+        [HttpGet("GetTaskItemsByStatus/{Status")]
+        public IEnumerable<TaskItemModel> GetTaskItemsByStatus(string status)
         {
-            return _data.GetTaskStatus();
+            return _data.GetTaskItemsByStatus(status);
         }
 
+        // Update a TaskItem
+        // This will be used to add an assignee or change title, description, due date, priority or status
         [HttpPost("UpdateTaskItem")]
         public bool UpdateTaskItem(TaskItemModel TaskUpdate)
         {
             return _data.UpdateTaskItem(TaskUpdate);
         }
 
+        // Soft delete a TaskItem
         [HttpPost("DeleteTaskItem")]
         public bool DeleteTaskItem(TaskItemModel TaskDelete)
         {
             return _data.DeleteTaskItem(TaskDelete);
         }
-
     }
 }
