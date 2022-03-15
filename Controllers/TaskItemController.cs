@@ -40,7 +40,7 @@ namespace GetShitDoneBackend.Controllers
         [HttpGet("GetTaskItemsByeUserID/{UserID}")]
         public IEnumerable<TaskItemModel> GetTaskItemsByUserID(int UserID)
         {
-            return _data.GetTaskItemsByUserID(UserID);
+            return _data.GetTaskItemsByUserID(Id);
         }
 
         [HttpGet("GetTaskItemsByProjectID/{ProjectID}")]
