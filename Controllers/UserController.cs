@@ -3,11 +3,14 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 using Microsoft.AspNetCore.Mvc;
+using GetShitDoneBackend.Models;
+using GetShitDoneBackend.Models.DTO;
+using GetShitDoneBackend.Services;
 
 namespace GetShitDoneBackend.Controllers
 {
     [ApiController]
-    [Route("api/[controller]")]
+    [Route("[controller]")]
     public class UserController : ControllerBase
     {
         private readonly UserService _data;
