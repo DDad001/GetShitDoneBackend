@@ -12,8 +12,8 @@ namespace GetShitDoneBackend.Controllers
     [Route("[controller]")]
     public class TaskItemController : ControllerBase
     {
-         private readonly TaskItemService _data;
-        //vaiable _data is to acces all the functions from service    
+        private readonly TaskItemService _data;
+        //variable _data is to access all the functions from service    
         //we don't want to manipulate the service, thats why we want it to be read only 
         //now data will have acccess to all the functions in the folder
 
@@ -22,17 +22,20 @@ namespace GetShitDoneBackend.Controllers
             _data = dataFromService;
         }
 
+        // Add a new TaskItem
         [HttpPost("AddTaskItem")]
         public bool AddTaskItem(TaskItemModel newTaskItem)
         {
             return _data.AddTaskItem(newTaskItem);
         }
 
-        [HttpGet("GetTaskItem")]
+        // Get a LIST of all TaskItems
+        [HttpGet("GetAllTaskItems")]
         public IEnumerable<TaskItemModel> GetAllTaskItems()
         {
             return _data.GetAllTaskItems();
         }
+
 
         [HttpGet("GetTaskItemsByUserID/{ID}")]
         public IEnumerable<TaskItemModel> GetTaskItemsByUserID(int Id)
