@@ -7,6 +7,6 @@ namespace GetShitDoneBackend.Services
 {
     public class PasswordService
     {
-        
+        // Nothing here just like Blog site lol
     }
 }
