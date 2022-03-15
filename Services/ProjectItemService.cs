@@ -63,7 +63,7 @@ namespace GetShitDoneBackend.Services
         }
 
         // Get a ProjectItem by a memberId
-        public IEnumberable<ProjectItemModel> GetProjectItemsByAMemberId(string memberId)
+        public IEnumerable<ProjectItemModel> GetProjectItemsByAMemberId(string memberId)
         {
            //"Tag1, Tag2, Tag3,Tag4"
             List<ProjectItemModel> AllProjectsWithMemberId = new List<ProjectItemModel>();//[]
@@ -85,7 +85,7 @@ namespace GetShitDoneBackend.Services
         }
 
         // Get a ProjectItem by a memberUsername
-        public IEnumberable<ProjectItemModel> GetProjectItemsByAMemberUsername(string memberUsername)
+        public IEnumerable<ProjectItemModel> GetProjectItemsByAMemberUsername(string memberUsername)
         {
            //"Tag1, Tag2, Tag3,Tag4"
             List<ProjectItemModel> AllProjectsWithMemberUsername = new List<ProjectItemModel>();//[]
