@@ -14,7 +14,7 @@ namespace GetShitDoneBackend.Models
         public string? DateCreated { get; set; }
         public string? DueDate { get; set; }
         public string? Status { get; set; }
-        public int MembersId { get; set; }
+        public string? MembersId { get; set; }
         public string? MembersUsername { get; set; }
         public bool IsDeleted { get; set; }
         public bool IsArchived { get; set; }

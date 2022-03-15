@@ -62,31 +62,31 @@ namespace GetShitDoneBackend.Services
             return _context.ProjectItemInfo.Where(item => item.Status == status);
         }
 
-        public ProjectItemModel GetProjectItemByAMemberId(int memberId)
+        public IEnumberable<ProjectItemModel> GetProjectItemsByAMemberId(int memberId)
         {
-            return _context.ProjectItemInfo.Where(item => item.UserId == memberId);
+            return _context.ProjectItemInfo.Where(item => item.MembersId == memberId);
         }
 
         // Needs some working on
-        public ProjectItemModel GetProjectItemByAMemberUsername(string memberUsername)
+        public IEnumberable<ProjectItemModel> GetProjectItemsByAMemberUsername(string memberUsername)
         {
-            //"Tag1, Tag2, Tag3,Tag4"
-            List<ProjectItemModel> AllMembersByUsername = new List<ProjectItemModel>();//[]
-            var allItems = GetAllProjectItem().ToList();//{Tag:"Tag1, Tag2",Tag:"Tag2",Tag:"tag3"}
+           //"Tag1, Tag2, Tag3,Tag4"
+            List<BlogItemModel> AllBlogsWithTag = new List<BlogItemModel>();//[]
+            var allItems = GetAllBlogItems().ToList();//{Tag:"Tag1, Tag2",Tag:"Tag2",Tag:"tag3"}
             for(int i=0; i < allItems.Count; i++)
             {
-                ProjectItemModel Item = allItems[i];//{Tag:"Tag1, Tag2"}
-                var itemArr = Item.MembersUsername.Split(",");//["Tag1","Tag2"]
+                BlogItemModel Item = allItems[i];//{Tag:"Tag1, Tag2"}
+                var itemArr = Item.Tags.Split(",");//["Tag1","Tag2"]
                 for(int j = 0; j < itemArr.Length; j++)
                 {   //Tag1 j = 0
                     //Tag2 j = 1
-                    if(itemArr[j].Contains(memberUsername))
+                    if(itemArr[j].Contains(Tag))
                     {// Tag1               Tag1
-                        AllMembersByUsername.Add(Item);//{Tag:"Tag1, Tag2"}
+                        AllBlogsWithTag.Add(Item);//{Tag:"Tag1, Tag2"}
                     }
                 }
             }
-            return AllMembersByUsername;
+            return AllBlogsWithTag;
         }
 
         public IEnumerable<ProjectItemModel> GetDeletedProjectItems()
