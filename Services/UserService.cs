@@ -55,7 +55,7 @@ namespace GetShitDoneBackend.Services
             var UserInfo = new UserIdDTO();
             var foundUser = _context.UserInfo.SingleOrDefault(user => user.Username == username);
             UserInfo.UserId = foundUser.Id;
-            UserInfo.PublisherName = foundUser.Username;
+            UserInfo.Username = foundUser.Username;
             return UserInfo;
         }
 
