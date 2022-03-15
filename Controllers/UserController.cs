@@ -7,7 +7,7 @@ using Microsoft.AspNetCore.Mvc;
 namespace GetShitDoneBackend.Controllers
 {
     [ApiController]
-    [Route("api/[controller]")]
+    [Route("[controller]")]
     public class UserController : ControllerBase
     {
         
