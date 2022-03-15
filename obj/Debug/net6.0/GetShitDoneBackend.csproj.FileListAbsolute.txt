@@ -25,3 +25,13 @@
 /Users/daniald/Level-2 CodeStack/GetShitDoneBackend/obj/Debug/net6.0/ref/GetShitDoneBackend.dll
 /Users/daniald/Level-2 CodeStack/GetShitDoneBackend/obj/Debug/net6.0/GetShitDoneBackend.pdb
 /Users/daniald/Level-2 CodeStack/GetShitDoneBackend/obj/Debug/net6.0/GetShitDoneBackend.genruntimeconfig.cache
+/Users/dylanmcfarlin/Desktop/CodeStack/Level-3/getshitdone-backend/GetShitDoneBackend/obj/Debug/net6.0/GetShitDoneBackend.csproj.AssemblyReference.cache
+/Users/dylanmcfarlin/Desktop/CodeStack/Level-3/getshitdone-backend/GetShitDoneBackend/obj/Debug/net6.0/GetShitDoneBackend.GeneratedMSBuildEditorConfig.editorconfig
+/Users/dylanmcfarlin/Desktop/CodeStack/Level-3/getshitdone-backend/GetShitDoneBackend/obj/Debug/net6.0/GetShitDoneBackend.AssemblyInfoInputs.cache
+/Users/dylanmcfarlin/Desktop/CodeStack/Level-3/getshitdone-backend/GetShitDoneBackend/obj/Debug/net6.0/GetShitDoneBackend.AssemblyInfo.cs
+/Users/dylanmcfarlin/Desktop/CodeStack/Level-3/getshitdone-backend/GetShitDoneBackend/obj/Debug/net6.0/GetShitDoneBackend.csproj.CoreCompileInputs.cache
+/Users/dylanmcfarlin/Desktop/CodeStack/Level-3/getshitdone-backend/GetShitDoneBackend/obj/Debug/net6.0/GetShitDoneBackend.MvcApplicationPartsAssemblyInfo.cs
+/Users/dylanmcfarlin/Desktop/CodeStack/Level-3/getshitdone-backend/GetShitDoneBackend/obj/Debug/net6.0/GetShitDoneBackend.MvcApplicationPartsAssemblyInfo.cache
+/Users/dylanmcfarlin/Desktop/CodeStack/Level-3/getshitdone-backend/GetShitDoneBackend/obj/Debug/net6.0/GetShitDoneBackend.dll
+/Users/dylanmcfarlin/Desktop/CodeStack/Level-3/getshitdone-backend/GetShitDoneBackend/obj/Debug/net6.0/ref/GetShitDoneBackend.dll
+/Users/dylanmcfarlin/Desktop/CodeStack/Level-3/getshitdone-backend/GetShitDoneBackend/obj/Debug/net6.0/GetShitDoneBackend.pdb
