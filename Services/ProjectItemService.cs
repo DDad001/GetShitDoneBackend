@@ -26,12 +26,12 @@ namespace GetShitDoneBackend.Services
             return _context.ProjectItemInfo;
         }
 
-        public ProjectItemModel GetItemsById(int id)
+        public ProjectItemModel GetProjectItemsById(int id)
         {
             return _context.ProjectItemInfo.SingleOrDefault(item => item.Id == id);
         }
 
-        public IEnumerable<ProjectItemModel> GetItemsByUserId(int userId)
+        public IEnumerable<ProjectItemModel> GetProjectItemsByUserId(int userId)
         {
             return _context.ProjectItemInfo.Where(item => item.UserId == userId);
         }
@@ -62,31 +62,48 @@ namespace GetShitDoneBackend.Services
             return _context.ProjectItemInfo.Where(item => item.Status == status);
         }
 
-        public IEnumberable<ProjectItemModel> GetProjectItemsByAMemberId(int memberId)
-        {
-            return _context.ProjectItemInfo.Where(item => item.MembersId == memberId);
-        }
-
-        // Needs some working on
-        public IEnumberable<ProjectItemModel> GetProjectItemsByAMemberUsername(string memberUsername)
+        // Get a ProjectItem by a memberId
+        public IEnumberable<ProjectItemModel> GetProjectItemsByAMemberId(string memberId)
         {
            //"Tag1, Tag2, Tag3,Tag4"
-            List<BlogItemModel> AllBlogsWithTag = new List<BlogItemModel>();//[]
-            var allItems = GetAllBlogItems().ToList();//{Tag:"Tag1, Tag2",Tag:"Tag2",Tag:"tag3"}
+            List<ProjectItemModel> AllProjectsWithMemberId = new List<ProjectItemModel>();//[]
+            var allItems = GetAllProjectItem().ToList();//{Tag:"Tag1, Tag2",Tag:"Tag2",Tag:"tag3"}
             for(int i=0; i < allItems.Count; i++)
             {
-                BlogItemModel Item = allItems[i];//{Tag:"Tag1, Tag2"}
-                var itemArr = Item.Tags.Split(",");//["Tag1","Tag2"]
+                ProjectItemModel Item = allItems[i];//{Tag:"Tag1, Tag2"}
+                var itemArr = Item.MembersId.Split(",");//["Tag1","Tag2"]
                 for(int j = 0; j < itemArr.Length; j++)
                 {   //Tag1 j = 0
                     //Tag2 j = 1
-                    if(itemArr[j].Contains(Tag))
+                    if(itemArr[j].Contains(memberId))
                     {// Tag1               Tag1
-                        AllBlogsWithTag.Add(Item);//{Tag:"Tag1, Tag2"}
+                        AllProjectsWithMemberId.Add(Item);//{Tag:"Tag1, Tag2"}
                     }
                 }
             }
-            return AllBlogsWithTag;
+            return AllProjectsWithMemberId;
+        }
+
+        // Get a ProjectItem by a memberUsername
+        public IEnumberable<ProjectItemModel> GetProjectItemsByAMemberUsername(string memberUsername)
+        {
+           //"Tag1, Tag2, Tag3,Tag4"
+            List<ProjectItemModel> AllProjectsWithMemberUsername = new List<ProjectItemModel>();//[]
+            var allItems = GetAllProjectItem().ToList();//{Tag:"Tag1, Tag2",Tag:"Tag2",Tag:"tag3"}
+            for(int i=0; i < allItems.Count; i++)
+            {
+                ProjectItemModel Item = allItems[i];//{Tag:"Tag1, Tag2"}
+                var itemArr = Item.MembersUsername.Split(",");//["Tag1","Tag2"]
+                for(int j = 0; j < itemArr.Length; j++)
+                {   //Tag1 j = 0
+                    //Tag2 j = 1
+                    if(itemArr[j].Contains(memberUsername))
+                    {// Tag1               Tag1
+                        AllProjectsWithMemberUsername.Add(Item);//{Tag:"Tag1, Tag2"}
+                    }
+                }
+            }
+            return AllProjectsWithMemberUsername;
         }
 
         public IEnumerable<ProjectItemModel> GetDeletedProjectItems()
