@@ -81,18 +81,18 @@ namespace GetShitDoneBackend.Controllers
             return _data.GetProjectItemByStatus(status);
         }
 
-        // Get a ProjectItem by a specific memberId
+        // Get a LIST of all ProjectItems you are a member of by memberId
         [HttpGet("GetProjectItemByAMemberId/{MemberId}")]
-        public ProjectItemModel GetProjectItemByAMemberId(int memberId)
+        public IEnumerable<ProjectItemModel> GetProjectItemsByAMemberId(int memberId)
         {
-            return _data.GetProjectItemByAMemberId(memberId);
+            return _data.GetProjectItemsByAMemberId(memberId);
         }
 
-        // Get a LIST of all ProjectItems specific memberUsername is a member of
+        // Get a LIST of all ProjectItems you are a member of by memberUsername
         [HttpGet("GetProjectItemByAMemberUsername/{MemberUsername}")]
-        public IEnumerable<ProjectItemModel> GetProjectItemByAMemberUsername(string memberUsername)
+        public IEnumerable<ProjectItemModel> GetProjectItemsByAMemberUsername(string memberUsername)
         {
-            return _data.GetProjectItemByAMemberUsername(memberUsername);
+            return _data.GetProjectItemsByAMemberUsername(memberUsername);
         }
 
         // Get all soft deleted ProjectItems 
