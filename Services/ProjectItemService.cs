@@ -2,6 +2,8 @@ using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
+using GetShitDoneBackend.Models;
+using GetShitDoneBackend.Services.Context;
 
 namespace GetShitDoneBackend.Services
 {
@@ -65,29 +67,42 @@ namespace GetShitDoneBackend.Services
             return _context.ProjectItemInfo.Where(item => item.UserId == memberId);
         }
 
+        // Needs some working on
         public ProjectItemModel GetProjectItemByAMemberUsername(string memberUsername)
         {
-            return _data.GetProjectItemByAMemberUsername(memberUsername);
-        }
-
-        public ProjectItemModel GetProjectItemByAMemberUsername(string memberUsername)
-        {
-            return _data.GetProjectItemByAMemberUsername(memberUsername);
+            //"Tag1, Tag2, Tag3,Tag4"
+            List<ProjectItemModel> AllMembersByUsername = new List<ProjectItemModel>();//[]
+            var allItems = GetAllProjectItem().ToList();//{Tag:"Tag1, Tag2",Tag:"Tag2",Tag:"tag3"}
+            for(int i=0; i < allItems.Count; i++)
+            {
+                ProjectItemModel Item = allItems[i];//{Tag:"Tag1, Tag2"}
+                var itemArr = Item.MembersUsername.Split(",");//["Tag1","Tag2"]
+                for(int j = 0; j < itemArr.Length; j++)
+                {   //Tag1 j = 0
+                    //Tag2 j = 1
+                    if(itemArr[j].Contains(memberUsername))
+                    {// Tag1               Tag1
+                        AllMembersByUsername.Add(Item);//{Tag:"Tag1, Tag2"}
+                    }
+                }
+            }
+            return AllMembersByUsername;
         }
 
         public IEnumerable<ProjectItemModel> GetDeletedProjectItems()
         {
-            return _data.GetDeletedProjectItems();
+            return _context.ProjectItemInfo.Where(item => item.IsDeleted);
         }
 
         public IEnumerable<ProjectItemModel> GetArchivedProjectItems()
         {
-            return _data.GetArchivedProjectItems();
+            return _context.ProjectItemInfo.Where(item => item.IsArchived);
         }
 
         public bool UpdateProjectItem(ProjectItemModel updatedProject)
         {
-            return _data.UpdateProjectItem(updatedProject);
+            _context.Update<ProjectItemModel>(updatedProject);
+            return _context.SaveChanges() != 0;
         }
     }
 }
