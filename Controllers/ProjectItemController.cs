@@ -48,16 +48,16 @@ namespace GetShitDoneBackend.Controllers
 
         // Get a ProjectItem by the title of a ProjectItem 
         [HttpGet("GetProjectItemByTitle/{Title}")]
-        public ProjectItemModel GetBlogItemByTitle(string title)
+        public ProjectItemModel GetProjectItemByTitle(string title)
         {
-            return _data.GetBlogItemByTitle(title);
+            return _data.GetProjectItemByTitle(title);
         }
 
         // Get a ProjectItem by the description of a ProjectItem
         [HttpGet("GetProjectItemByDescription/{Description}")]
-        public ProjectItemModel GetBlogItemByDescription(string description)
+        public ProjectItemModel GetProjectItemByDescription(string description)
         {
-            return _data.GetBlogItemByDescription(description);
+            return _data.GetProjectItemByDescription(description);
         }
 
         // Get a ProjectItem by the dateCreated of a ProjectItem 
