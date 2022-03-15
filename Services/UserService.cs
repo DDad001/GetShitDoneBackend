@@ -2,6 +2,10 @@ using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
+using GetShitDoneBackend.Models;
+using GetShitDoneBackend.Models.DTO;
+using GetShitDoneBackend.Services;
+using GetShitDoneBackend.Services.Context;
 
 namespace GetShitDoneBackend.Services
 {
