@@ -8,6 +8,7 @@ var builder = WebApplication.CreateBuilder(args);
 // Add services to the container.
 builder.Services.AddScoped<UserService>();
 builder.Services.AddScoped<ProjectItemService>();
+builder.Services.AddScoped<TaskItemService>();
 builder.Services.AddScoped<PasswordService>();
 
 var connectionString = builder.Configuration.GetConnectionString("JiraString");
