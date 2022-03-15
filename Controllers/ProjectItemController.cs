@@ -18,138 +18,114 @@ namespace GetShitDoneBackend.Controllers
             _data = dataFromService;
         }
 
+        // Add a new ProjectItemModel.cs to table
         [HttpPost("AddProjectItem")]
         public bool AddProjectItem(ProjectItemModel newProjectItem)
         {
             return _data.AddprojectItem(newProjectItem);
         }
 
+        // Get all ProjectItems from table
         [HttpGet("GetAllProjectItems")]
         public IEnumerable<ProjectItemModel> GetAllProjectItem()
         {
             return _data.GetAllProjectItems();
         }
 
+        // Get a ProjectItem by the specific id set to a ProjectItem
         [HttpGet("GetProjectItemById/{Id}")]
         public ProjectItemModel GetItemsById(int id)
         {
             return _data.GetItemsById(id);
         }
 
+        // Get a LIST of ProjectItems by a specific userId
         [HttpGet("GetProjectItemsByUserId/{UserId}")]
         public IEnumerable<ProjectItemModel> GetItemsByUserId(int userId)
         {
             return _data.GetItemsByUserId(userId);
         }
 
-
+        // Get a ProjectItem by the title of a ProjectItem 
         [HttpGet("GetProjectItemByTitle/{Title}")]
         public ProjectItemModel GetBlogItemByTitle(string title)
         {
             return _data.GetBlogItemByTitle(title);
         }
 
+        // Get a ProjectItem by the description of a ProjectItem
         [HttpGet("GetProjectItemByDescription/{Description}")]
         public ProjectItemModel GetBlogItemByDescription(string description)
         {
             return _data.GetBlogItemByDescription(description);
         }
 
+        // Get a ProjectItem by the dateCreated of a ProjectItem 
         [HttpGet("GetProjectItemByDateCreated/{DateCreated}")]
         public ProjectItemModel GetProjectItemByDateCreated(string dateCreated)
         {
             return _data.GetProjectItemByDateCreated(dateCreated);
         }
 
+        // Get a ProjectItem by the dueDate of a ProjectItem 
         [HttpGet("GetProjectItemByDueDate/{DueDate}")]
         public ProjectItemModel GetProjectItemByDueDate(string dueDate)
         {
             return _data.GetProjectItemByDueDate(dueDate);
         }
 
-        [HttpGet("GetProjectItemStatus/{Status}")]
-        public ProjectItemModel GetProjectItemStatus(string status)
+        // Get all ProjectItems by status. (E.g "GetProjectItemByStatus/toDo")
+        [HttpGet("GetProjectItemByStatus/{Status}")]
+        public IEnumerable<ProjectItemModel> GetProjectItemByStatus(string status)
         {
-            return _data.GetProjectItemStatus(status);
+            return _data.GetProjectItemByStatus(status);
         }
 
+        // Get a ProjectItem by a specific memberId
         [HttpGet("GetProjectItemByAMemberId/{MemberId}")]
         public ProjectItemModel GetProjectItemByAMemberId(int memberId)
         {
             return _data.GetProjectItemByAMemberId(memberId);
         }
 
+        // Get a ProjectItem by a specific memberUsername
         [HttpGet("GetProjectItemByAMemberUsername/{MemberUsername}")]
         public ProjectItemModel GetProjectItemByAMemberUsername(string memberUsername)
         {
             return _data.GetProjectItemByAMemberUsername(memberUsername);
         }
 
-        [HttpGet("GetProjectItemByAMemberUsername/{MemberUsername}")]
-        public ProjectItemModel GetProjectItemByAMemberUsername(string memberUsername)
-        {
-            return _data.GetProjectItemByAMemberUsername(memberUsername);
-        }
-
+        // Get all soft deleted ProjectItems 
         [HttpGet("GetDeletedProjectItems")]
         public IEnumerable<ProjectItemModel> GetDeletedProjectItems()
         {
             return _data.GetDeletedProjectItems();
         }
 
+        // Get all archived ProjectItems
         [HttpGet("GetArchivedProjectItems")]
         public IEnumerable<ProjectItemModel> GetArchivedProjectItems()
         {
             return _data.GetArchivedProjectItems();
         }
 
-        // This is the endpoint front end will use 
+        // This is the endpoint front end will use to push a new member to the 
+        // string[] MembersUsername array.
+        // 
+        // This will update the entire project, so it will take in a model that must contain
+        // every required field to make the ProjectItemModel.cs
         [HttpPost("UpdateProjectItem")]
         public bool UpdateProjectItem(ProjectItemModel updatedProject)
         {
             return _data.UpdateProjectItem(updatedProject);
         }
-        
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-        
-
-        [HttpPost("UpdateBlogItem")]
-        public bool UpdateBlogItem (BlogItemModel BlogUpdate)
+        // Soft delete a ProjectItem
+        [HttpPost("DeleteProjectItem")]
+         public bool DeleteProjectItem (ProjectItemModel deletedProject)
         {
-            return _data.UpdateBlogItem(BlogUpdate);
+           return _data.DeleteProjectItem(deletedProject);
         }
-
-        [HttpPost("DeleteBlogItem")]
-         public bool DeleteBlogItem (BlogItemModel BlogDelete)
-        {
-           return _data.DeleteBlogItem(BlogDelete);
-        }
-
-        [HttpGet("GetBlogItemById/{Id}")]
-        public BlogItemModel GetBlogItemById(int Id)
-        {
-            return _data.GetBlogItemById(Id);
-        }
-
 
     }
 }
