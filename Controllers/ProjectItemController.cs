@@ -88,9 +88,9 @@ namespace GetShitDoneBackend.Controllers
             return _data.GetProjectItemByAMemberId(memberId);
         }
 
-        // Get a ProjectItem by a specific memberUsername
+        // Get a LIST of all ProjectItems specific memberUsername is a member of
         [HttpGet("GetProjectItemByAMemberUsername/{MemberUsername}")]
-        public ProjectItemModel GetProjectItemByAMemberUsername(string memberUsername)
+        public IEnumerable<ProjectItemModel> GetProjectItemByAMemberUsername(string memberUsername)
         {
             return _data.GetProjectItemByAMemberUsername(memberUsername);
         }
