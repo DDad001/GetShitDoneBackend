@@ -43,7 +43,6 @@ namespace GetShitDoneBackend.Controllers
         }
 
         //Update User Account
-
         [HttpPost("UpdateUser/{username}")]
         public bool UpdateUser(string username)
         {
