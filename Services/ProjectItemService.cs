@@ -121,5 +121,12 @@ namespace GetShitDoneBackend.Services
             _context.Update<ProjectItemModel>(updatedProject);
             return _context.SaveChanges() != 0;
         }
+
+         public bool DeleteProjectItem (ProjectItemModel deletedProject)
+        {
+            deletedProject.IsDeleted = true;
+            _context.Update<ProjectItemModel>(deletedProject);
+            return _context.SaveChanges() !=0;
+        }
     }
 }
