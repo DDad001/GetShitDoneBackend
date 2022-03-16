@@ -50,6 +50,11 @@ namespace GetShitDoneBackend.Services
             return _context.UserInfo.SingleOrDefault( user => user.Username == username);
         }
 
+        public UserModel GetUserById(int id)
+        {
+            return _context.UserInfo.SingleOrDefault(user => user.Id == id);
+        }
+
         public UserIdDTO GetUserIdDTOByUsername(string username)
         {
             var UserInfo = new UserIdDTO();
@@ -59,14 +64,14 @@ namespace GetShitDoneBackend.Services
             return UserInfo;
         }
 
-        // public UserModel GetUserIdDTOById(int id)
-        // {
-        //     var UserInfo = new UserIdDTO();
-        //     var foundUser = _context.UserInfo.SingleOrDefault(user => user.Id == id);
-        //     UserInfo.UserId = foundUser.Id;
-        //     UserInfo.Username = foundUser.Username;
-        //     return UserInfo;
-        // }
+        public UserIdDTO GetUserIdDTOById(int id)
+        {
+            var UserInfo = new UserIdDTO();
+            var foundUser = _context.UserInfo.SingleOrDefault(user => user.UserId == id);
+            UserInfo.UserId = foundUser.Id;
+            UserInfo.Username = foundUser.Username;
+            return UserInfo;
+        }
 
         public IActionResult Login(LoginDTO user)
         {
