@@ -1,20 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "/Users/daniald/Level-2 CodeStack/GetShitDoneBackend/GetShitDoneBackend.csproj": {}
+    "/Users/dylanmcfarlin/Desktop/CodeStack/Level-3/getshitdone-backend/GetShitDoneBackend/GetShitDoneBackend.csproj": {}
   },
   "projects": {
-    "/Users/daniald/Level-2 CodeStack/GetShitDoneBackend/GetShitDoneBackend.csproj": {
+    "/Users/dylanmcfarlin/Desktop/CodeStack/Level-3/getshitdone-backend/GetShitDoneBackend/GetShitDoneBackend.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "/Users/daniald/Level-2 CodeStack/GetShitDoneBackend/GetShitDoneBackend.csproj",
+        "projectUniqueName": "/Users/dylanmcfarlin/Desktop/CodeStack/Level-3/getshitdone-backend/GetShitDoneBackend/GetShitDoneBackend.csproj",
         "projectName": "GetShitDoneBackend",
-        "projectPath": "/Users/daniald/Level-2 CodeStack/GetShitDoneBackend/GetShitDoneBackend.csproj",
-        "packagesPath": "/Users/daniald/.nuget/packages/",
-        "outputPath": "/Users/daniald/Level-2 CodeStack/GetShitDoneBackend/obj/",
+        "projectPath": "/Users/dylanmcfarlin/Desktop/CodeStack/Level-3/getshitdone-backend/GetShitDoneBackend/GetShitDoneBackend.csproj",
+        "packagesPath": "/Users/dylanmcfarlin/.nuget/packages/",
+        "outputPath": "/Users/dylanmcfarlin/Desktop/CodeStack/Level-3/getshitdone-backend/GetShitDoneBackend/obj/",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "/Users/daniald/.nuget/NuGet/NuGet.Config"
+          "/Users/dylanmcfarlin/.nuget/NuGet/NuGet.Config"
         ],
         "originalTargetFrameworks": [
           "net6.0"

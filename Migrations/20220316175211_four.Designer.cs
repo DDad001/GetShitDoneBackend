@@ -11,8 +11,8 @@ using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 namespace GetShitDoneBackend.Migrations
 {
     [DbContext(typeof(DataContext))]
-    [Migration("20220316163945_addingTables")]
-    partial class addingTables
+    [Migration("20220316175211_four")]
+    partial class four
     {
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
@@ -113,6 +113,9 @@ namespace GetShitDoneBackend.Migrations
                         .HasColumnType("int");
 
                     SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"), 1L, 1);
+
+                    b.Property<string>("FullName")
+                        .HasColumnType("nvarchar(max)");
 
                     b.Property<string>("Hash")
                         .HasColumnType("nvarchar(max)");

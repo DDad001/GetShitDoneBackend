@@ -102,6 +102,7 @@ namespace GetShitDoneBackend.Services
                 var hashedPassword = HashPassword(UserToAdd.Password);
                 newUser.Id = UserToAdd.Id;
                 newUser.Username = UserToAdd.Username;
+                newUser.FullName = UserToAdd.FullName;
                 newUser.Salt = hashedPassword.Salt;
                 newUser.Hash = hashedPassword.Hash;
 

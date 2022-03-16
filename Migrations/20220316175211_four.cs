@@ -4,7 +4,7 @@
 
 namespace GetShitDoneBackend.Migrations
 {
-    public partial class fullName : Migration
+    public partial class four : Migration
     {
         protected override void Up(MigrationBuilder migrationBuilder)
         {
