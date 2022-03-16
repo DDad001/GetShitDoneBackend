@@ -72,6 +72,6 @@ namespace GetShitDoneBackend.Controllers
         public bool UpdateUserRole(string username, bool IsAdmin, bool IsProjectManager, bool IsSpecialist)
         {
             return _data.UpdateUserRole(username, IsAdmin, IsProjectManager, IsSpecialist);
-        } 
+        }
     }
 }
