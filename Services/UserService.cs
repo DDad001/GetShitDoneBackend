@@ -148,6 +148,7 @@ namespace GetShitDoneBackend.Services
         {
             //This one is sednig over just the username.
             //Then you have to get the object to then be updated.
+            
             UserModel foundUser = GetUserByUsername(Username);
             bool result = false;
             if(foundUser != null)
@@ -194,6 +195,7 @@ namespace GetShitDoneBackend.Services
         {
             UserModel foundUser = GetUserByUsername(username);
 
+            foundUser.Username = username;
             foundUser.IsAdmin = IsAdmin;
             foundUser.IsProjectManager = IsProjectManager;
             foundUser.IsSpecialist = IsSpecialist;
