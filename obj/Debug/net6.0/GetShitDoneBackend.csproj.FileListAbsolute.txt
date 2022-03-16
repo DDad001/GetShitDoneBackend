@@ -123,3 +123,13 @@
 /Users/dylanmcfarlin/Desktop/CodeStack/Level-3/getshitdone-backend/GetShitDoneBackend/obj/Debug/net6.0/GetShitDoneBackend.csproj.CopyComplete
 /Users/dylanmcfarlin/Desktop/CodeStack/Level-3/getshitdone-backend/GetShitDoneBackend/obj/Debug/net6.0/GetShitDoneBackend.genruntimeconfig.cache
 >>>>>>> 777a06c440556f1b792cbc7fe050c678c859adfb
+/Users/scottmorenzone/Desktop/Codestack Academy/Level2/GetShitDoneBackend/obj/Debug/net6.0/GetShitDoneBackend.csproj.AssemblyReference.cache
+/Users/scottmorenzone/Desktop/Codestack Academy/Level2/GetShitDoneBackend/obj/Debug/net6.0/GetShitDoneBackend.GeneratedMSBuildEditorConfig.editorconfig
+/Users/scottmorenzone/Desktop/Codestack Academy/Level2/GetShitDoneBackend/obj/Debug/net6.0/GetShitDoneBackend.AssemblyInfoInputs.cache
+/Users/scottmorenzone/Desktop/Codestack Academy/Level2/GetShitDoneBackend/obj/Debug/net6.0/GetShitDoneBackend.AssemblyInfo.cs
+/Users/scottmorenzone/Desktop/Codestack Academy/Level2/GetShitDoneBackend/obj/Debug/net6.0/GetShitDoneBackend.csproj.CoreCompileInputs.cache
+/Users/scottmorenzone/Desktop/Codestack Academy/Level2/GetShitDoneBackend/obj/Debug/net6.0/GetShitDoneBackend.MvcApplicationPartsAssemblyInfo.cs
+/Users/scottmorenzone/Desktop/Codestack Academy/Level2/GetShitDoneBackend/obj/Debug/net6.0/GetShitDoneBackend.MvcApplicationPartsAssemblyInfo.cache
+/Users/scottmorenzone/Desktop/Codestack Academy/Level2/GetShitDoneBackend/obj/Debug/net6.0/GetShitDoneBackend.dll
+/Users/scottmorenzone/Desktop/Codestack Academy/Level2/GetShitDoneBackend/obj/Debug/net6.0/ref/GetShitDoneBackend.dll
+/Users/scottmorenzone/Desktop/Codestack Academy/Level2/GetShitDoneBackend/obj/Debug/net6.0/GetShitDoneBackend.pdb

@@ -25,6 +25,12 @@ namespace GetShitDoneBackend.Controllers
             return _data.GetUserIdDTOByUsername(username);
         }
 
+        [HttpGet("UserById/{id}")]
+        public UserIdDTO GetUserIdDTOById(int id)
+        {
+            return _data.GetUserIdDTOById(id);
+        }
+
         [HttpPost("AddUser")]
         public bool AddUser(CreateAccountDTO UserToAdd) {
             return _data.AddUser(UserToAdd);
@@ -47,6 +53,12 @@ namespace GetShitDoneBackend.Controllers
         public bool UpdateUser(string username)
         {
             return _data.UpdateUsername(username);
+        }
+
+        [HttpPost("UpdateUserById/{id}")]
+        public bool UpdateUserById(int id)
+        {
+            return _data.UpdateUsernameById(id);
         }
 
         //Delete User Account
