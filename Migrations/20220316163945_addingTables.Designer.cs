@@ -3,6 +3,7 @@ using GetShitDoneBackend.Services.Context;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
 using Microsoft.EntityFrameworkCore.Metadata;
+using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 
 #nullable disable
@@ -10,9 +11,10 @@ using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 namespace GetShitDoneBackend.Migrations
 {
     [DbContext(typeof(DataContext))]
-    partial class DataContextModelSnapshot : ModelSnapshot
+    [Migration("20220316163945_addingTables")]
+    partial class addingTables
     {
-        protected override void BuildModel(ModelBuilder modelBuilder)
+        protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder
@@ -112,12 +114,6 @@ namespace GetShitDoneBackend.Migrations
 
                     SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"), 1L, 1);
 
-<<<<<<< HEAD
-                    b.Property<string>("FullName")
-                        .HasColumnType("nvarchar(max)");
-
-=======
->>>>>>> 40cecf3cd0078530f6d9e3ce2f718ce106304acb
                     b.Property<string>("Hash")
                         .HasColumnType("nvarchar(max)");
 
