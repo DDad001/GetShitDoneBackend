@@ -63,7 +63,7 @@ namespace GetShitDoneBackend.Services
         {
             var UserInfo = new UserIdDTO();
             var foundUser = _context.UserInfo.SingleOrDefault(user => user.Id == id);
-            UserInfo.Id = foundUser.Id;
+            UserInfo.UserId = foundUser.Id;
             UserInfo.Username = foundUser.Username;
             return UserInfo;
         }

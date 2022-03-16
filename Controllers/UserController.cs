@@ -58,7 +58,7 @@ namespace GetShitDoneBackend.Controllers
         [HttpPost("UpdateUserById/{id}")]
         public bool UpdateUserById(int id)
         {
-            return _data.UpdateUsernameById(id);
+            return _data.UpdateUserById(id);
         }
 
         //Delete User Account
