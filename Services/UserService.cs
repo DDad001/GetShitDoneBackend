@@ -64,14 +64,14 @@ namespace GetShitDoneBackend.Services
             return UserInfo;
         }
 
-        public UserIdDTO GetUserIdDTOById(int id)
-        {
-            var UserInfo = new UserIdDTO();
-            var foundUser = _context.UserInfo.SingleOrDefault(user => user.UserId == id);
-            UserInfo.UserId = foundUser.Id;
-            UserInfo.Username = foundUser.Username;
-            return UserInfo;
-        }
+        // public UserIdDTO GetUserIdDTOById(int id)
+        // {
+        //     var UserInfo = new UserIdDTO();
+        //     var foundUser = _context.UserInfo.SingleOrDefault(user => user.UserId == id);
+        //     UserInfo.UserId = foundUser.Id;
+        //     UserInfo.Username = foundUser.Username;
+        //     return UserInfo;
+        // }
 
         public IActionResult Login(LoginDTO user)
         {
