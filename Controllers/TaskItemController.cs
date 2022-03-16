@@ -40,26 +40,26 @@ namespace GetShitDoneBackend.Controllers
         [HttpGet("GetTaskItemsById/{Id}")]
         public TaskItemModel GetTaskItemsByID(int id)
         {
-            return _data.GetTaskItemsById(id);
+            return _data.GetTaskItemsByID(id);
         }
 
         // Get a LIST of TaskItems by the parent ProjectItem Id
         [HttpGet("GetTaskItemsByProjectID/{ProjectID}")]
-        public List<TaskItemModel> GetTaskItemsByProjectID(int ProjectID)
+        public  IEnumerable<TaskItemModel> GetTaskItemsByProjectID(int ProjectID)
         {
             return _data.GetTaskItemsByProjectID(ProjectID);
         }
 
         // Get a TaskItem by the Title of TaskItem
         [HttpGet("GetTaskItemByTitle/{Title}")]
-        public TaskItemModel GetTaskItemByTitle(string Title)
+        public  IEnumerable<TaskItemModel> GetTaskItemByTitle(string Title)
         {
             return _data.GetTaskItemByTitle(Title);
         }
 
         // Get a TaskItem by the description of a TaskItem
         [HttpGet("GetTaskItemByDescription/{Description}")]
-        public TaskItemModel GetTaskItemByDescription(string Description)
+        public  IEnumerable<TaskItemModel> GetTaskItemByDescription(string Description)
         {
             return _data.GetTaskItemByDescription(Description);
         }
