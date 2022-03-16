@@ -25,11 +25,11 @@ namespace GetShitDoneBackend.Controllers
             return _data.GetUserIdDTOByUsername(username);
         }
 
-        [HttpGet("UserById/{id}")]
-        public UserIdDTO GetUserIdDTOById(int id)
-        {
-            return _data.GetUserIdDTOById(id);
-        }
+        // [HttpGet("UserById/{id}")]
+        // public UserIdDTO GetUserIdDTOById(int id)
+        // {
+        //     return _data.GetUserIdDTOById(id);
+        // }
 
         [HttpPost("AddUser")]
         public bool AddUser(CreateAccountDTO UserToAdd) {
