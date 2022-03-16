@@ -67,5 +67,11 @@ namespace GetShitDoneBackend.Controllers
         {
             return _data.DeleteUser(userToDelete);
         }
+
+        [HttpPost("UpdateUserRole/{username}/{IsAdmin}/{IsProjectManager}/{IsSpecialist}")]
+        public bool UpdateUserRole(string username, bool IsAdmin, bool IsProjectManager, bool IsSpecialist)
+        {
+            return _data.UpdateUserRole(username, IsAdmin, IsProjectManager, IsSpecialist);
+        } 
     }
 }

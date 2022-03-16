@@ -194,5 +194,17 @@ namespace GetShitDoneBackend.Services
             }
             return result;
         }
+
+        public bool UpdateUserRole(string username, bool IsAdmin, bool IsProjectManager, bool IsSpecialist)
+        {
+            UserModel foundUser = GetUserByUsername(username);
+
+            foundUser.IsAdmin = IsAdmin;
+            foundUser.IsProjectManager = IsProjectManager;
+            foundUser.IsSpecialist = IsSpecialist;
+            
+            _context.Update<UserModel>(foundUser);
+            return _context.SaveChanges() != 0;
+        }
     }
 }
