@@ -166,7 +166,7 @@ namespace GetShitDoneBackend.Services
             if(foundUser != null)
             {
                 //A user was foundUser
-                foundUser.UserId = id;
+                foundUser.Id = id;
                 _context.Update<UserModel>(foundUser);
                result =  _context.SaveChanges() != 0;
             }
