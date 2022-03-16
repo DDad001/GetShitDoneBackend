@@ -26,7 +26,7 @@ namespace GetShitDoneBackend.Controllers
         }
 
         [HttpGet("UserById/{id}")]
-        public UserIdDTO GetUserById(int id)
+        public UserIdDTO GetUserIdDTOById(int id)
         {
             return _data.GetUserIdDTOById(id);
         }
