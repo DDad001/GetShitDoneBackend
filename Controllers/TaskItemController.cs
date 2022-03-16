@@ -93,7 +93,7 @@ namespace GetShitDoneBackend.Controllers
         }
 
         // Get a LIST of all TaskItems by Status
-        [HttpGet("GetTaskItemsByStatus/{Status")]
+        [HttpGet("GetTaskItemsByStatus/{Status}")]
         public IEnumerable<TaskItemModel> GetTaskItemsByStatus(string status)
         {
             return _data.GetTaskItemsByStatus(status);
