@@ -59,6 +59,15 @@ namespace GetShitDoneBackend.Services
             return UserInfo;
         }
 
+        public UserIdDTO GetUserById(int id)
+        {
+            var UserInfo = new UserIdDTO();
+            var foundUser = _context.UserInfo.SingleOrDefault(user => user.UserId == id);
+            UserInfo.UserId = foundUser.Id;
+            UserInfo.Username = foundUser.Username;
+            return UserInfo;
+        }
+
         public IActionResult Login(LoginDTO user)
         {
             IActionResult Result = Unauthorized();
@@ -133,6 +142,7 @@ namespace GetShitDoneBackend.Services
             return _context.SaveChanges() !=0; 
         }
 
+
         public bool UpdateUsername(string Username)
         {
             //This one is sednig over just the username.
@@ -143,6 +153,20 @@ namespace GetShitDoneBackend.Services
             {
                 //A user was foundUser
                 foundUser.Username = Username;
+                _context.Update<UserModel>(foundUser);
+               result =  _context.SaveChanges() != 0;
+            }
+            return result;
+        }
+
+         public bool UpdateUserById(int id)
+        {
+            UserModel foundUser = GetUserById(id);
+            bool result = false;
+            if(foundUser != null)
+            {
+                //A user was foundUser
+                foundUser.Id = id;
                 _context.Update<UserModel>(foundUser);
                result =  _context.SaveChanges() != 0;
             }
