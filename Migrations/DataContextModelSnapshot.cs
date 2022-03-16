@@ -112,12 +112,9 @@ namespace GetShitDoneBackend.Migrations
 
                     SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"), 1L, 1);
 
-<<<<<<< HEAD
                     b.Property<string>("FullName")
                         .HasColumnType("nvarchar(max)");
 
-=======
->>>>>>> 40cecf3cd0078530f6d9e3ce2f718ce106304acb
                     b.Property<string>("Hash")
                         .HasColumnType("nvarchar(max)");
 
