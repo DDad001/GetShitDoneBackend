@@ -59,14 +59,14 @@ namespace GetShitDoneBackend.Services
             return UserInfo;
         }
 
-        public UserIdDTO GetUserIdDTOById(int id)
-        {
-            var UserInfo = new UserIdDTO();
-            var foundUser = _context.UserInfo.SingleOrDefault(user => user.Id == id);
-            UserInfo.UserId = foundUser.Id;
-            UserInfo.Username = foundUser.Username;
-            return UserInfo;
-        }
+        // public UserModel GetUserIdDTOById(int id)
+        // {
+        //     var UserInfo = new UserIdDTO();
+        //     var foundUser = _context.UserInfo.SingleOrDefault(user => user.Id == id);
+        //     UserInfo.UserId = foundUser.Id;
+        //     UserInfo.Username = foundUser.Username;
+        //     return UserInfo;
+        // }
 
         public IActionResult Login(LoginDTO user)
         {
@@ -159,19 +159,19 @@ namespace GetShitDoneBackend.Services
             return result;
         }
 
-         public bool UpdateUserById(int id)
-        {
-            UserModel foundUser = GetUserIdDTOById(id);
-            bool result = false;
-            if(foundUser != null)
-            {
-                //A user was foundUser
-                foundUser.UserId = id;
-                _context.Update<UserModel>(foundUser);
-               result =  _context.SaveChanges() != 0;
-            }
-            return result;
-        }
+        //  public bool UpdateUserById(int id)
+        // {
+        //     UserModel foundUser = GetUserIdDTOById(id);
+        //     bool result = false;
+        //     if(foundUser != null)
+        //     {
+        //         //A user was foundUser
+        //         foundUser.Id = id;
+        //         _context.Update<UserModel>(foundUser);
+        //        result =  _context.SaveChanges() != 0;
+        //     }
+        //     return result;
+        // }
 
         public bool DeleteUser(string Username)
         {

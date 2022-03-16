@@ -55,11 +55,11 @@ namespace GetShitDoneBackend.Controllers
             return _data.UpdateUsername(username);
         }
 
-        [HttpPost("UpdateUserById/{id}")]
-        public bool UpdateUserById(int id)
-        {
-            return _data.UpdateUserById(id);
-        }
+        // [HttpPost("UpdateUserById/{id}")]
+        // public bool UpdateUserById(int id)
+        // {
+        //     return _data.UpdateUserById(id);
+        // }
 
         //Delete User Account
         [HttpPost("DeleteUser/{userToDelete}")]
