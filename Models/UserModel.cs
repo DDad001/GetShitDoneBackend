@@ -11,6 +11,9 @@ namespace GetShitDoneBackend.Models
         public string? Username { get; set; }
         public string? Salt { get; set; }
         public string? Hash { get; set; }
+        public bool IsAdmin { get; set; }
+        public bool IsProjectManager { get; set; }
+        public bool IsSpecialist { get; set; }
         
         public UserModel(){}
     }

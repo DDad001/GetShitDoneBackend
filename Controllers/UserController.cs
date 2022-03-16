@@ -6,9 +6,6 @@ using GetShitDoneBackend.Models;
 using GetShitDoneBackend.Models.DTO;
 using GetShitDoneBackend.Services;
 using Microsoft.AspNetCore.Mvc;
-using GetShitDoneBackend.Models;
-using GetShitDoneBackend.Models.DTO;
-using GetShitDoneBackend.Services;
 
 namespace GetShitDoneBackend.Controllers
 {

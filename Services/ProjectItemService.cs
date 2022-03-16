@@ -21,7 +21,7 @@ namespace GetShitDoneBackend.Services
             return _context.SaveChanges() != 0;
         }
 
-        public IEnumerable<ProjectItemModel> GetAllProjectItem()
+        public IEnumerable<ProjectItemModel> GetAllProjectItems()
         {
             return _context.ProjectItemInfo;
         }
@@ -37,27 +37,27 @@ namespace GetShitDoneBackend.Services
         }
 
 
-        public ProjectItemModel GetProjectItemByTitle(string title)
+        public IEnumerable<ProjectItemModel> GetProjectItemByTitle(string title)
         {
             return _context.ProjectItemInfo.Where(item => item.Title == title);
         }
 
-        public ProjectItemModel GetProjectItemByDescription(string description)
+        public IEnumerable<ProjectItemModel> GetProjectItemByDescription(string description)
         {
             return _context.ProjectItemInfo.Where(item => item.Description == description);
         }
 
-        public ProjectItemModel GetProjectItemByDateCreated(string dateCreated)
+        public IEnumerable<ProjectItemModel> GetProjectItemByDateCreated(string dateCreated)
         {
             return _context.ProjectItemInfo.Where(item => item.DateCreated == dateCreated);
         }
 
-        public ProjectItemModel GetProjectItemByDueDate(string dueDate)
+        public IEnumerable<ProjectItemModel> GetProjectItemByDueDate(string dueDate)
         {
             return _context.ProjectItemInfo.Where(item => item.DueDate == dueDate);
         }
 
-        public ProjectItemModel GetProjectItemStatus(string status)
+        public IEnumerable<ProjectItemModel> GetProjectItemsByStatus(string status)
         {
             return _context.ProjectItemInfo.Where(item => item.Status == status);
         }
@@ -67,7 +67,7 @@ namespace GetShitDoneBackend.Services
         {
            //"Tag1, Tag2, Tag3,Tag4"
             List<ProjectItemModel> AllProjectsWithMemberId = new List<ProjectItemModel>();//[]
-            var allItems = GetAllProjectItem().ToList();//{Tag:"Tag1, Tag2",Tag:"Tag2",Tag:"tag3"}
+            var allItems = GetAllProjectItems().ToList();//{Tag:"Tag1, Tag2",Tag:"Tag2",Tag:"tag3"}
             for(int i=0; i < allItems.Count; i++)
             {
                 ProjectItemModel Item = allItems[i];//{Tag:"Tag1, Tag2"}
@@ -89,7 +89,7 @@ namespace GetShitDoneBackend.Services
         {
            //"Tag1, Tag2, Tag3,Tag4"
             List<ProjectItemModel> AllProjectsWithMemberUsername = new List<ProjectItemModel>();//[]
-            var allItems = GetAllProjectItem().ToList();//{Tag:"Tag1, Tag2",Tag:"Tag2",Tag:"tag3"}
+            var allItems = GetAllProjectItems().ToList();//{Tag:"Tag1, Tag2",Tag:"Tag2",Tag:"tag3"}
             for(int i=0; i < allItems.Count; i++)
             {
                 ProjectItemModel Item = allItems[i];//{Tag:"Tag1, Tag2"}

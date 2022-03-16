@@ -22,68 +22,68 @@ namespace GetShitDoneBackend.Controllers
         [HttpPost("AddProjectItem")]
         public bool AddProjectItem(ProjectItemModel newProjectItem)
         {
-            return _data.AddprojectItem(newProjectItem);
+            return _data.AddProjectItem(newProjectItem);
         }
 
         // Get all ProjectItems from table
         [HttpGet("GetAllProjectItems")]
-        public IEnumerable<ProjectItemModel> GetAllProjectItem()
+        public IEnumerable<ProjectItemModel> GetAllProjectItems()
         {
             return _data.GetAllProjectItems();
         }
 
         // Get a ProjectItem by the specific id set to a ProjectItem
         [HttpGet("GetProjectItemById/{Id}")]
-        public ProjectItemModel GetItemsById(int id)
+        public ProjectItemModel GetProjectItemsById(int id)
         {
-            return _data.GetItemsById(id);
+            return _data.GetProjectItemsById(id);
         }
 
         // Get a LIST of ProjectItems by a specific userId
         [HttpGet("GetProjectItemsByUserId/{UserId}")]
         public IEnumerable<ProjectItemModel> GetItemsByUserId(int userId)
         {
-            return _data.GetItemsByUserId(userId);
+            return _data.GetProjectItemsByUserId(userId);
         }
 
         // Get a ProjectItem by the title of a ProjectItem 
         [HttpGet("GetProjectItemByTitle/{Title}")]
-        public ProjectItemModel GetProjectItemByTitle(string title)
+        public IEnumerable<ProjectItemModel> GetProjectItemByTitle(string title)
         {
             return _data.GetProjectItemByTitle(title);
         }
 
         // Get a ProjectItem by the description of a ProjectItem
         [HttpGet("GetProjectItemByDescription/{Description}")]
-        public ProjectItemModel GetProjectItemByDescription(string description)
+        public IEnumerable<ProjectItemModel> GetProjectItemByDescription(string description)
         {
             return _data.GetProjectItemByDescription(description);
         }
 
         // Get a ProjectItem by the dateCreated of a ProjectItem 
         [HttpGet("GetProjectItemByDateCreated/{DateCreated}")]
-        public ProjectItemModel GetProjectItemByDateCreated(string dateCreated)
+        public IEnumerable<ProjectItemModel> GetProjectItemByDateCreated(string dateCreated)
         {
             return _data.GetProjectItemByDateCreated(dateCreated);
         }
 
         // Get a ProjectItem by the dueDate of a ProjectItem 
         [HttpGet("GetProjectItemByDueDate/{DueDate}")]
-        public ProjectItemModel GetProjectItemByDueDate(string dueDate)
+        public IEnumerable<ProjectItemModel>GetProjectItemByDueDate(string dueDate)
         {
             return _data.GetProjectItemByDueDate(dueDate);
         }
 
         // Get all ProjectItems by status. (E.g "GetProjectItemByStatus/toDo")
-        [HttpGet("GetProjectItemByStatus/{Status}")]
-        public IEnumerable<ProjectItemModel> GetProjectItemByStatus(string status)
+        [HttpGet("GetProjectItemsByStatus/{Status}")]
+        public IEnumerable<ProjectItemModel> GetProjectItemsByStatus(string status)
         {
-            return _data.GetProjectItemByStatus(status);
+            return _data.GetProjectItemsByStatus(status);
         }
 
         // Get a LIST of all ProjectItems you are a member of by memberId
-        [HttpGet("GetProjectItemByAMemberId/{MemberId}")]
-        public IEnumerable<ProjectItemModel> GetProjectItemsByAMemberId(int memberId)
+        [HttpGet("GetProjectItemsByAMemberId/{MemberId}")]
+        public IEnumerable<ProjectItemModel> GetProjectItemsByAMemberId(string memberId)
         {
             return _data.GetProjectItemsByAMemberId(memberId);
         }
