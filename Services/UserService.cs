@@ -161,7 +161,7 @@ namespace GetShitDoneBackend.Services
 
          public bool UpdateUserById(int id)
         {
-            UserModel foundUser = GetUserById(id);
+            UserModel foundUser = GetUserIdDTOById(id);
             bool result = false;
             if(foundUser != null)
             {
