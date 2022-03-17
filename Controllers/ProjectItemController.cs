@@ -69,7 +69,7 @@ namespace GetShitDoneBackend.Controllers
 
         // Get a ProjectItem by the dueDate of a ProjectItem 
         [HttpGet("GetProjectItemByDueDate/{DueDate}")]
-        public IEnumerable<ProjectItemModel>GetProjectItemByDueDate(string dueDate)
+        public IEnumerable<ProjectItemModel> GetProjectItemByDueDate(string dueDate)
         {
             return _data.GetProjectItemByDueDate(dueDate);
         }

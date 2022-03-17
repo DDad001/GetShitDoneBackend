@@ -1,0 +1,5 @@
+{
+    "appService.preDeployTask": "publish-release",
+    "appService.deploySubpath": "bin/Release/net6.0/publish",
+    "appService.defaultWebAppToDeploy": "/subscriptions/f8cb959c-b440-4f96-a3b3-559487478f16/resourceGroups/appsvc_windows_centralus2/providers/Microsoft.Web/sites/dylanmcfarlinbackend"
+}

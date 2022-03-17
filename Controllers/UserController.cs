@@ -26,7 +26,7 @@ namespace GetShitDoneBackend.Controllers
         }
 
         // [HttpGet("UserById/{id}")]
-        // public UserIdDTO GetUserIdDTOById(int id)
+        // public UserIdDTO GetUserById(int id)
         // {
         //     return _data.GetUserIdDTOById(id);
         // }
@@ -66,6 +66,12 @@ namespace GetShitDoneBackend.Controllers
         public bool DeleteUser(string? userToDelete)
         {
             return _data.DeleteUser(userToDelete);
+        }
+
+        [HttpPost("UpdateUserRole/{username}/{IsAdmin}/{IsProjectManager}/{IsSpecialist}")]
+        public bool UpdateUserRole(string username, bool IsAdmin, bool IsProjectManager, bool IsSpecialist)
+        {
+            return _data.UpdateUserRole(username, IsAdmin, IsProjectManager, IsSpecialist);
         }
     }
 }

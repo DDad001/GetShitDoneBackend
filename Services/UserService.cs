@@ -50,6 +50,11 @@ namespace GetShitDoneBackend.Services
             return _context.UserInfo.SingleOrDefault( user => user.Username == username);
         }
 
+        public UserModel GetUserById(int id)
+        {
+            return _context.UserInfo.SingleOrDefault(user => user.Id == id);
+        }
+
         public UserIdDTO GetUserIdDTOByUsername(string username)
         {
             var UserInfo = new UserIdDTO();
@@ -59,10 +64,10 @@ namespace GetShitDoneBackend.Services
             return UserInfo;
         }
 
-        // public UserModel GetUserIdDTOById(int id)
+        // public UserIdDTO GetUserIdDTOById(int id)
         // {
         //     var UserInfo = new UserIdDTO();
-        //     var foundUser = _context.UserInfo.SingleOrDefault(user => user.Id == id);
+        //     var foundUser = _context.UserInfo.SingleOrDefault(user => user.UserId == id);
         //     UserInfo.UserId = foundUser.Id;
         //     UserInfo.Username = foundUser.Username;
         //     return UserInfo;
@@ -148,6 +153,7 @@ namespace GetShitDoneBackend.Services
         {
             //This one is sednig over just the username.
             //Then you have to get the object to then be updated.
+            
             UserModel foundUser = GetUserByUsername(Username);
             bool result = false;
             if(foundUser != null)
@@ -188,6 +194,19 @@ namespace GetShitDoneBackend.Services
                result =  _context.SaveChanges() != 0;
             }
             return result;
+        }
+
+        public bool UpdateUserRole(string username, bool IsAdmin, bool IsProjectManager, bool IsSpecialist)
+        {
+            UserModel foundUser = GetUserByUsername(username);
+
+            foundUser.Username = username;
+            foundUser.IsAdmin = IsAdmin;
+            foundUser.IsProjectManager = IsProjectManager;
+            foundUser.IsSpecialist = IsSpecialist;
+            
+            _context.Update<UserModel>(foundUser);
+            return _context.SaveChanges() != 0;
         }
     }
 }

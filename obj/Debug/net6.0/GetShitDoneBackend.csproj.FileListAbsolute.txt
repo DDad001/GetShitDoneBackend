@@ -25,16 +25,6 @@
 /Users/daniald/Level-2 CodeStack/GetShitDoneBackend/obj/Debug/net6.0/ref/GetShitDoneBackend.dll
 /Users/daniald/Level-2 CodeStack/GetShitDoneBackend/obj/Debug/net6.0/GetShitDoneBackend.pdb
 /Users/daniald/Level-2 CodeStack/GetShitDoneBackend/obj/Debug/net6.0/GetShitDoneBackend.genruntimeconfig.cache
-/Users/dylanmcfarlin/Desktop/CodeStack/Level-3/getshitdone-backend/GetShitDoneBackend/obj/Debug/net6.0/GetShitDoneBackend.csproj.AssemblyReference.cache
-/Users/dylanmcfarlin/Desktop/CodeStack/Level-3/getshitdone-backend/GetShitDoneBackend/obj/Debug/net6.0/GetShitDoneBackend.GeneratedMSBuildEditorConfig.editorconfig
-/Users/dylanmcfarlin/Desktop/CodeStack/Level-3/getshitdone-backend/GetShitDoneBackend/obj/Debug/net6.0/GetShitDoneBackend.AssemblyInfoInputs.cache
-/Users/dylanmcfarlin/Desktop/CodeStack/Level-3/getshitdone-backend/GetShitDoneBackend/obj/Debug/net6.0/GetShitDoneBackend.AssemblyInfo.cs
-/Users/dylanmcfarlin/Desktop/CodeStack/Level-3/getshitdone-backend/GetShitDoneBackend/obj/Debug/net6.0/GetShitDoneBackend.csproj.CoreCompileInputs.cache
-/Users/dylanmcfarlin/Desktop/CodeStack/Level-3/getshitdone-backend/GetShitDoneBackend/obj/Debug/net6.0/GetShitDoneBackend.MvcApplicationPartsAssemblyInfo.cs
-/Users/dylanmcfarlin/Desktop/CodeStack/Level-3/getshitdone-backend/GetShitDoneBackend/obj/Debug/net6.0/GetShitDoneBackend.MvcApplicationPartsAssemblyInfo.cache
-/Users/dylanmcfarlin/Desktop/CodeStack/Level-3/getshitdone-backend/GetShitDoneBackend/obj/Debug/net6.0/GetShitDoneBackend.dll
-/Users/dylanmcfarlin/Desktop/CodeStack/Level-3/getshitdone-backend/GetShitDoneBackend/obj/Debug/net6.0/ref/GetShitDoneBackend.dll
-/Users/dylanmcfarlin/Desktop/CodeStack/Level-3/getshitdone-backend/GetShitDoneBackend/obj/Debug/net6.0/GetShitDoneBackend.pdb
 <<<<<<< HEAD
 /Users/daniald/Level-2 CodeStack/GetShitDoneBackend/bin/Debug/net6.0/Humanizer.dll
 /Users/daniald/Level-2 CodeStack/GetShitDoneBackend/bin/Debug/net6.0/Microsoft.Data.SqlClient.dll
@@ -71,57 +61,6 @@
 /Users/daniald/Level-2 CodeStack/GetShitDoneBackend/bin/Debug/net6.0/runtimes/win/lib/netstandard2.0/System.Security.Cryptography.ProtectedData.dll
 /Users/daniald/Level-2 CodeStack/GetShitDoneBackend/bin/Debug/net6.0/runtimes/win/lib/netcoreapp3.0/System.Windows.Extensions.dll
 =======
-/Users/dylanmcfarlin/Desktop/CodeStack/Level-3/getshitdone-backend/GetShitDoneBackend/bin/Debug/net6.0/appsettings.Development.json
-/Users/dylanmcfarlin/Desktop/CodeStack/Level-3/getshitdone-backend/GetShitDoneBackend/bin/Debug/net6.0/appsettings.json
-/Users/dylanmcfarlin/Desktop/CodeStack/Level-3/getshitdone-backend/GetShitDoneBackend/bin/Debug/net6.0/GetShitDoneBackend
-/Users/dylanmcfarlin/Desktop/CodeStack/Level-3/getshitdone-backend/GetShitDoneBackend/bin/Debug/net6.0/GetShitDoneBackend.deps.json
-/Users/dylanmcfarlin/Desktop/CodeStack/Level-3/getshitdone-backend/GetShitDoneBackend/bin/Debug/net6.0/GetShitDoneBackend.runtimeconfig.json
-/Users/dylanmcfarlin/Desktop/CodeStack/Level-3/getshitdone-backend/GetShitDoneBackend/bin/Debug/net6.0/GetShitDoneBackend.dll
-/Users/dylanmcfarlin/Desktop/CodeStack/Level-3/getshitdone-backend/GetShitDoneBackend/bin/Debug/net6.0/ref/GetShitDoneBackend.dll
-/Users/dylanmcfarlin/Desktop/CodeStack/Level-3/getshitdone-backend/GetShitDoneBackend/bin/Debug/net6.0/GetShitDoneBackend.pdb
-/Users/dylanmcfarlin/Desktop/CodeStack/Level-3/getshitdone-backend/GetShitDoneBackend/bin/Debug/net6.0/Humanizer.dll
-/Users/dylanmcfarlin/Desktop/CodeStack/Level-3/getshitdone-backend/GetShitDoneBackend/bin/Debug/net6.0/Microsoft.Data.SqlClient.dll
-/Users/dylanmcfarlin/Desktop/CodeStack/Level-3/getshitdone-backend/GetShitDoneBackend/bin/Debug/net6.0/Microsoft.EntityFrameworkCore.dll
-/Users/dylanmcfarlin/Desktop/CodeStack/Level-3/getshitdone-backend/GetShitDoneBackend/bin/Debug/net6.0/Microsoft.EntityFrameworkCore.Abstractions.dll
-/Users/dylanmcfarlin/Desktop/CodeStack/Level-3/getshitdone-backend/GetShitDoneBackend/bin/Debug/net6.0/Microsoft.EntityFrameworkCore.Design.dll
-/Users/dylanmcfarlin/Desktop/CodeStack/Level-3/getshitdone-backend/GetShitDoneBackend/bin/Debug/net6.0/Microsoft.EntityFrameworkCore.Relational.dll
-/Users/dylanmcfarlin/Desktop/CodeStack/Level-3/getshitdone-backend/GetShitDoneBackend/bin/Debug/net6.0/Microsoft.EntityFrameworkCore.SqlServer.dll
-/Users/dylanmcfarlin/Desktop/CodeStack/Level-3/getshitdone-backend/GetShitDoneBackend/bin/Debug/net6.0/Microsoft.Extensions.Caching.Memory.dll
-/Users/dylanmcfarlin/Desktop/CodeStack/Level-3/getshitdone-backend/GetShitDoneBackend/bin/Debug/net6.0/Microsoft.Identity.Client.dll
-/Users/dylanmcfarlin/Desktop/CodeStack/Level-3/getshitdone-backend/GetShitDoneBackend/bin/Debug/net6.0/Microsoft.IdentityModel.JsonWebTokens.dll
-/Users/dylanmcfarlin/Desktop/CodeStack/Level-3/getshitdone-backend/GetShitDoneBackend/bin/Debug/net6.0/Microsoft.IdentityModel.Logging.dll
-/Users/dylanmcfarlin/Desktop/CodeStack/Level-3/getshitdone-backend/GetShitDoneBackend/bin/Debug/net6.0/Microsoft.IdentityModel.Protocols.dll
-/Users/dylanmcfarlin/Desktop/CodeStack/Level-3/getshitdone-backend/GetShitDoneBackend/bin/Debug/net6.0/Microsoft.IdentityModel.Protocols.OpenIdConnect.dll
-/Users/dylanmcfarlin/Desktop/CodeStack/Level-3/getshitdone-backend/GetShitDoneBackend/bin/Debug/net6.0/Microsoft.IdentityModel.Tokens.dll
-/Users/dylanmcfarlin/Desktop/CodeStack/Level-3/getshitdone-backend/GetShitDoneBackend/bin/Debug/net6.0/Microsoft.OpenApi.dll
-/Users/dylanmcfarlin/Desktop/CodeStack/Level-3/getshitdone-backend/GetShitDoneBackend/bin/Debug/net6.0/Microsoft.Win32.SystemEvents.dll
-/Users/dylanmcfarlin/Desktop/CodeStack/Level-3/getshitdone-backend/GetShitDoneBackend/bin/Debug/net6.0/Swashbuckle.AspNetCore.Swagger.dll
-/Users/dylanmcfarlin/Desktop/CodeStack/Level-3/getshitdone-backend/GetShitDoneBackend/bin/Debug/net6.0/Swashbuckle.AspNetCore.SwaggerGen.dll
-/Users/dylanmcfarlin/Desktop/CodeStack/Level-3/getshitdone-backend/GetShitDoneBackend/bin/Debug/net6.0/Swashbuckle.AspNetCore.SwaggerUI.dll
-/Users/dylanmcfarlin/Desktop/CodeStack/Level-3/getshitdone-backend/GetShitDoneBackend/bin/Debug/net6.0/System.Configuration.ConfigurationManager.dll
-/Users/dylanmcfarlin/Desktop/CodeStack/Level-3/getshitdone-backend/GetShitDoneBackend/bin/Debug/net6.0/System.Drawing.Common.dll
-/Users/dylanmcfarlin/Desktop/CodeStack/Level-3/getshitdone-backend/GetShitDoneBackend/bin/Debug/net6.0/System.IdentityModel.Tokens.Jwt.dll
-/Users/dylanmcfarlin/Desktop/CodeStack/Level-3/getshitdone-backend/GetShitDoneBackend/bin/Debug/net6.0/System.Runtime.Caching.dll
-/Users/dylanmcfarlin/Desktop/CodeStack/Level-3/getshitdone-backend/GetShitDoneBackend/bin/Debug/net6.0/System.Security.Cryptography.ProtectedData.dll
-/Users/dylanmcfarlin/Desktop/CodeStack/Level-3/getshitdone-backend/GetShitDoneBackend/bin/Debug/net6.0/System.Security.Permissions.dll
-/Users/dylanmcfarlin/Desktop/CodeStack/Level-3/getshitdone-backend/GetShitDoneBackend/bin/Debug/net6.0/System.Windows.Extensions.dll
-/Users/dylanmcfarlin/Desktop/CodeStack/Level-3/getshitdone-backend/GetShitDoneBackend/bin/Debug/net6.0/runtimes/unix/lib/netcoreapp3.1/Microsoft.Data.SqlClient.dll
-/Users/dylanmcfarlin/Desktop/CodeStack/Level-3/getshitdone-backend/GetShitDoneBackend/bin/Debug/net6.0/runtimes/win/lib/netcoreapp3.1/Microsoft.Data.SqlClient.dll
-/Users/dylanmcfarlin/Desktop/CodeStack/Level-3/getshitdone-backend/GetShitDoneBackend/bin/Debug/net6.0/runtimes/win-arm/native/Microsoft.Data.SqlClient.SNI.dll
-/Users/dylanmcfarlin/Desktop/CodeStack/Level-3/getshitdone-backend/GetShitDoneBackend/bin/Debug/net6.0/runtimes/win-arm64/native/Microsoft.Data.SqlClient.SNI.dll
-/Users/dylanmcfarlin/Desktop/CodeStack/Level-3/getshitdone-backend/GetShitDoneBackend/bin/Debug/net6.0/runtimes/win-x64/native/Microsoft.Data.SqlClient.SNI.dll
-/Users/dylanmcfarlin/Desktop/CodeStack/Level-3/getshitdone-backend/GetShitDoneBackend/bin/Debug/net6.0/runtimes/win-x86/native/Microsoft.Data.SqlClient.SNI.dll
-/Users/dylanmcfarlin/Desktop/CodeStack/Level-3/getshitdone-backend/GetShitDoneBackend/bin/Debug/net6.0/runtimes/win/lib/netcoreapp3.0/Microsoft.Win32.SystemEvents.dll
-/Users/dylanmcfarlin/Desktop/CodeStack/Level-3/getshitdone-backend/GetShitDoneBackend/bin/Debug/net6.0/runtimes/unix/lib/netcoreapp3.0/System.Drawing.Common.dll
-/Users/dylanmcfarlin/Desktop/CodeStack/Level-3/getshitdone-backend/GetShitDoneBackend/bin/Debug/net6.0/runtimes/win/lib/netcoreapp3.0/System.Drawing.Common.dll
-/Users/dylanmcfarlin/Desktop/CodeStack/Level-3/getshitdone-backend/GetShitDoneBackend/bin/Debug/net6.0/runtimes/win/lib/netstandard2.0/System.Runtime.Caching.dll
-/Users/dylanmcfarlin/Desktop/CodeStack/Level-3/getshitdone-backend/GetShitDoneBackend/bin/Debug/net6.0/runtimes/win/lib/netstandard2.0/System.Security.Cryptography.ProtectedData.dll
-/Users/dylanmcfarlin/Desktop/CodeStack/Level-3/getshitdone-backend/GetShitDoneBackend/bin/Debug/net6.0/runtimes/win/lib/netcoreapp3.0/System.Windows.Extensions.dll
-/Users/dylanmcfarlin/Desktop/CodeStack/Level-3/getshitdone-backend/GetShitDoneBackend/obj/Debug/net6.0/staticwebassets.build.json
-/Users/dylanmcfarlin/Desktop/CodeStack/Level-3/getshitdone-backend/GetShitDoneBackend/obj/Debug/net6.0/staticwebassets.development.json
-/Users/dylanmcfarlin/Desktop/CodeStack/Level-3/getshitdone-backend/GetShitDoneBackend/obj/Debug/net6.0/scopedcss/bundle/GetShitDoneBackend.styles.css
-/Users/dylanmcfarlin/Desktop/CodeStack/Level-3/getshitdone-backend/GetShitDoneBackend/obj/Debug/net6.0/GetShitDoneBackend.csproj.CopyComplete
-/Users/dylanmcfarlin/Desktop/CodeStack/Level-3/getshitdone-backend/GetShitDoneBackend/obj/Debug/net6.0/GetShitDoneBackend.genruntimeconfig.cache
 >>>>>>> 777a06c440556f1b792cbc7fe050c678c859adfb
 /Users/scottmorenzone/Desktop/Codestack Academy/Level2/GetShitDoneBackend/obj/Debug/net6.0/GetShitDoneBackend.csproj.AssemblyReference.cache
 /Users/scottmorenzone/Desktop/Codestack Academy/Level2/GetShitDoneBackend/obj/Debug/net6.0/GetShitDoneBackend.GeneratedMSBuildEditorConfig.editorconfig
@@ -133,3 +72,54 @@
 /Users/scottmorenzone/Desktop/Codestack Academy/Level2/GetShitDoneBackend/obj/Debug/net6.0/GetShitDoneBackend.dll
 /Users/scottmorenzone/Desktop/Codestack Academy/Level2/GetShitDoneBackend/obj/Debug/net6.0/ref/GetShitDoneBackend.dll
 /Users/scottmorenzone/Desktop/Codestack Academy/Level2/GetShitDoneBackend/obj/Debug/net6.0/GetShitDoneBackend.pdb
+/Users/scottmorenzone/Desktop/Codestack Academy/Level2/GetShitDoneBackend/bin/Debug/net6.0/appsettings.Development.json
+/Users/scottmorenzone/Desktop/Codestack Academy/Level2/GetShitDoneBackend/bin/Debug/net6.0/appsettings.json
+/Users/scottmorenzone/Desktop/Codestack Academy/Level2/GetShitDoneBackend/bin/Debug/net6.0/GetShitDoneBackend
+/Users/scottmorenzone/Desktop/Codestack Academy/Level2/GetShitDoneBackend/bin/Debug/net6.0/GetShitDoneBackend.deps.json
+/Users/scottmorenzone/Desktop/Codestack Academy/Level2/GetShitDoneBackend/bin/Debug/net6.0/GetShitDoneBackend.runtimeconfig.json
+/Users/scottmorenzone/Desktop/Codestack Academy/Level2/GetShitDoneBackend/bin/Debug/net6.0/GetShitDoneBackend.dll
+/Users/scottmorenzone/Desktop/Codestack Academy/Level2/GetShitDoneBackend/bin/Debug/net6.0/ref/GetShitDoneBackend.dll
+/Users/scottmorenzone/Desktop/Codestack Academy/Level2/GetShitDoneBackend/bin/Debug/net6.0/GetShitDoneBackend.pdb
+/Users/scottmorenzone/Desktop/Codestack Academy/Level2/GetShitDoneBackend/bin/Debug/net6.0/Humanizer.dll
+/Users/scottmorenzone/Desktop/Codestack Academy/Level2/GetShitDoneBackend/bin/Debug/net6.0/Microsoft.Data.SqlClient.dll
+/Users/scottmorenzone/Desktop/Codestack Academy/Level2/GetShitDoneBackend/bin/Debug/net6.0/Microsoft.EntityFrameworkCore.dll
+/Users/scottmorenzone/Desktop/Codestack Academy/Level2/GetShitDoneBackend/bin/Debug/net6.0/Microsoft.EntityFrameworkCore.Abstractions.dll
+/Users/scottmorenzone/Desktop/Codestack Academy/Level2/GetShitDoneBackend/bin/Debug/net6.0/Microsoft.EntityFrameworkCore.Design.dll
+/Users/scottmorenzone/Desktop/Codestack Academy/Level2/GetShitDoneBackend/bin/Debug/net6.0/Microsoft.EntityFrameworkCore.Relational.dll
+/Users/scottmorenzone/Desktop/Codestack Academy/Level2/GetShitDoneBackend/bin/Debug/net6.0/Microsoft.EntityFrameworkCore.SqlServer.dll
+/Users/scottmorenzone/Desktop/Codestack Academy/Level2/GetShitDoneBackend/bin/Debug/net6.0/Microsoft.Extensions.Caching.Memory.dll
+/Users/scottmorenzone/Desktop/Codestack Academy/Level2/GetShitDoneBackend/bin/Debug/net6.0/Microsoft.Identity.Client.dll
+/Users/scottmorenzone/Desktop/Codestack Academy/Level2/GetShitDoneBackend/bin/Debug/net6.0/Microsoft.IdentityModel.JsonWebTokens.dll
+/Users/scottmorenzone/Desktop/Codestack Academy/Level2/GetShitDoneBackend/bin/Debug/net6.0/Microsoft.IdentityModel.Logging.dll
+/Users/scottmorenzone/Desktop/Codestack Academy/Level2/GetShitDoneBackend/bin/Debug/net6.0/Microsoft.IdentityModel.Protocols.dll
+/Users/scottmorenzone/Desktop/Codestack Academy/Level2/GetShitDoneBackend/bin/Debug/net6.0/Microsoft.IdentityModel.Protocols.OpenIdConnect.dll
+/Users/scottmorenzone/Desktop/Codestack Academy/Level2/GetShitDoneBackend/bin/Debug/net6.0/Microsoft.IdentityModel.Tokens.dll
+/Users/scottmorenzone/Desktop/Codestack Academy/Level2/GetShitDoneBackend/bin/Debug/net6.0/Microsoft.OpenApi.dll
+/Users/scottmorenzone/Desktop/Codestack Academy/Level2/GetShitDoneBackend/bin/Debug/net6.0/Microsoft.Win32.SystemEvents.dll
+/Users/scottmorenzone/Desktop/Codestack Academy/Level2/GetShitDoneBackend/bin/Debug/net6.0/Swashbuckle.AspNetCore.Swagger.dll
+/Users/scottmorenzone/Desktop/Codestack Academy/Level2/GetShitDoneBackend/bin/Debug/net6.0/Swashbuckle.AspNetCore.SwaggerGen.dll
+/Users/scottmorenzone/Desktop/Codestack Academy/Level2/GetShitDoneBackend/bin/Debug/net6.0/Swashbuckle.AspNetCore.SwaggerUI.dll
+/Users/scottmorenzone/Desktop/Codestack Academy/Level2/GetShitDoneBackend/bin/Debug/net6.0/System.Configuration.ConfigurationManager.dll
+/Users/scottmorenzone/Desktop/Codestack Academy/Level2/GetShitDoneBackend/bin/Debug/net6.0/System.Drawing.Common.dll
+/Users/scottmorenzone/Desktop/Codestack Academy/Level2/GetShitDoneBackend/bin/Debug/net6.0/System.IdentityModel.Tokens.Jwt.dll
+/Users/scottmorenzone/Desktop/Codestack Academy/Level2/GetShitDoneBackend/bin/Debug/net6.0/System.Runtime.Caching.dll
+/Users/scottmorenzone/Desktop/Codestack Academy/Level2/GetShitDoneBackend/bin/Debug/net6.0/System.Security.Cryptography.ProtectedData.dll
+/Users/scottmorenzone/Desktop/Codestack Academy/Level2/GetShitDoneBackend/bin/Debug/net6.0/System.Security.Permissions.dll
+/Users/scottmorenzone/Desktop/Codestack Academy/Level2/GetShitDoneBackend/bin/Debug/net6.0/System.Windows.Extensions.dll
+/Users/scottmorenzone/Desktop/Codestack Academy/Level2/GetShitDoneBackend/bin/Debug/net6.0/runtimes/unix/lib/netcoreapp3.1/Microsoft.Data.SqlClient.dll
+/Users/scottmorenzone/Desktop/Codestack Academy/Level2/GetShitDoneBackend/bin/Debug/net6.0/runtimes/win/lib/netcoreapp3.1/Microsoft.Data.SqlClient.dll
+/Users/scottmorenzone/Desktop/Codestack Academy/Level2/GetShitDoneBackend/bin/Debug/net6.0/runtimes/win-arm/native/Microsoft.Data.SqlClient.SNI.dll
+/Users/scottmorenzone/Desktop/Codestack Academy/Level2/GetShitDoneBackend/bin/Debug/net6.0/runtimes/win-arm64/native/Microsoft.Data.SqlClient.SNI.dll
+/Users/scottmorenzone/Desktop/Codestack Academy/Level2/GetShitDoneBackend/bin/Debug/net6.0/runtimes/win-x64/native/Microsoft.Data.SqlClient.SNI.dll
+/Users/scottmorenzone/Desktop/Codestack Academy/Level2/GetShitDoneBackend/bin/Debug/net6.0/runtimes/win-x86/native/Microsoft.Data.SqlClient.SNI.dll
+/Users/scottmorenzone/Desktop/Codestack Academy/Level2/GetShitDoneBackend/bin/Debug/net6.0/runtimes/win/lib/netcoreapp3.0/Microsoft.Win32.SystemEvents.dll
+/Users/scottmorenzone/Desktop/Codestack Academy/Level2/GetShitDoneBackend/bin/Debug/net6.0/runtimes/unix/lib/netcoreapp3.0/System.Drawing.Common.dll
+/Users/scottmorenzone/Desktop/Codestack Academy/Level2/GetShitDoneBackend/bin/Debug/net6.0/runtimes/win/lib/netcoreapp3.0/System.Drawing.Common.dll
+/Users/scottmorenzone/Desktop/Codestack Academy/Level2/GetShitDoneBackend/bin/Debug/net6.0/runtimes/win/lib/netstandard2.0/System.Runtime.Caching.dll
+/Users/scottmorenzone/Desktop/Codestack Academy/Level2/GetShitDoneBackend/bin/Debug/net6.0/runtimes/win/lib/netstandard2.0/System.Security.Cryptography.ProtectedData.dll
+/Users/scottmorenzone/Desktop/Codestack Academy/Level2/GetShitDoneBackend/bin/Debug/net6.0/runtimes/win/lib/netcoreapp3.0/System.Windows.Extensions.dll
+/Users/scottmorenzone/Desktop/Codestack Academy/Level2/GetShitDoneBackend/obj/Debug/net6.0/staticwebassets.build.json
+/Users/scottmorenzone/Desktop/Codestack Academy/Level2/GetShitDoneBackend/obj/Debug/net6.0/staticwebassets.development.json
+/Users/scottmorenzone/Desktop/Codestack Academy/Level2/GetShitDoneBackend/obj/Debug/net6.0/scopedcss/bundle/GetShitDoneBackend.styles.css
+/Users/scottmorenzone/Desktop/Codestack Academy/Level2/GetShitDoneBackend/obj/Debug/net6.0/GetShitDoneBackend.csproj.CopyComplete
+/Users/scottmorenzone/Desktop/Codestack Academy/Level2/GetShitDoneBackend/obj/Debug/net6.0/GetShitDoneBackend.genruntimeconfig.cache
