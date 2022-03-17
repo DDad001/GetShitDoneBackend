@@ -20,9 +20,9 @@ namespace GetShitDoneBackend.Controllers
         }
 
         [HttpGet("UserByUsername/{username}")]
-        public UserIdDTO GetUserByUsername(string username)
+        public UserModel GetUserByUsername(string username)
         {
-            return _data.GetUserIdDTOByUsername(username);
+            return _data.GetUserByUsername(username);
         }
 
         // [HttpGet("UserById/{id}")]
