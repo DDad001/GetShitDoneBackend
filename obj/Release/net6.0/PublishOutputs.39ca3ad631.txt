@@ -1,6 +1,11 @@
 /Users/dylanmcfarlin/Desktop/CodeStack/Level-3/getshitdone-backend/GetShitDoneBackend/bin/Release/net6.0/publish/GetShitDoneBackend
+/Users/dylanmcfarlin/Desktop/CodeStack/Level-3/getshitdone-backend/GetShitDoneBackend/bin/Release/net6.0/publish/publish/web.config
 /Users/dylanmcfarlin/Desktop/CodeStack/Level-3/getshitdone-backend/GetShitDoneBackend/bin/Release/net6.0/publish/appsettings.Development.json
 /Users/dylanmcfarlin/Desktop/CodeStack/Level-3/getshitdone-backend/GetShitDoneBackend/bin/Release/net6.0/publish/appsettings.json
+/Users/dylanmcfarlin/Desktop/CodeStack/Level-3/getshitdone-backend/GetShitDoneBackend/bin/Release/net6.0/publish/publish/appsettings.Development.json
+/Users/dylanmcfarlin/Desktop/CodeStack/Level-3/getshitdone-backend/GetShitDoneBackend/bin/Release/net6.0/publish/publish/appsettings.json
+/Users/dylanmcfarlin/Desktop/CodeStack/Level-3/getshitdone-backend/GetShitDoneBackend/bin/Release/net6.0/publish/publish/GetShitDoneBackend.deps.json
+/Users/dylanmcfarlin/Desktop/CodeStack/Level-3/getshitdone-backend/GetShitDoneBackend/bin/Release/net6.0/publish/publish/GetShitDoneBackend.runtimeconfig.json
 /Users/dylanmcfarlin/Desktop/CodeStack/Level-3/getshitdone-backend/GetShitDoneBackend/bin/Release/net6.0/publish/GetShitDoneBackend.dll
 /Users/dylanmcfarlin/Desktop/CodeStack/Level-3/getshitdone-backend/GetShitDoneBackend/bin/Release/net6.0/publish/GetShitDoneBackend.runtimeconfig.json
 /Users/dylanmcfarlin/Desktop/CodeStack/Level-3/getshitdone-backend/GetShitDoneBackend/bin/Release/net6.0/publish/GetShitDoneBackend.pdb
