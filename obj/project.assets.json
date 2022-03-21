@@ -2058,19 +2058,23 @@
     ]
   },
   "packageFolders": {
-    "/Users/daniald/.nuget/packages/": {}
+    "/Users/scottmorenzone/.nuget/packages/": {},
+    "/usr/local/share/dotnet/sdk/NuGetFallbackFolder": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "/Users/daniald/Level-2 CodeStack/GetShitDoneBackend/GetShitDoneBackend.csproj",
+      "projectUniqueName": "/Users/scottmorenzone/Desktop/Codestack Academy/Level2/GetShitDoneBackend/GetShitDoneBackend.csproj",
       "projectName": "GetShitDoneBackend",
-      "projectPath": "/Users/daniald/Level-2 CodeStack/GetShitDoneBackend/GetShitDoneBackend.csproj",
-      "packagesPath": "/Users/daniald/.nuget/packages/",
-      "outputPath": "/Users/daniald/Level-2 CodeStack/GetShitDoneBackend/obj/",
+      "projectPath": "/Users/scottmorenzone/Desktop/Codestack Academy/Level2/GetShitDoneBackend/GetShitDoneBackend.csproj",
+      "packagesPath": "/Users/scottmorenzone/.nuget/packages/",
+      "outputPath": "/Users/scottmorenzone/Desktop/Codestack Academy/Level2/GetShitDoneBackend/obj/",
       "projectStyle": "PackageReference",
+      "fallbackFolders": [
+        "/usr/local/share/dotnet/sdk/NuGetFallbackFolder"
+      ],
       "configFilePaths": [
-        "/Users/daniald/.nuget/NuGet/NuGet.Config"
+        "/Users/scottmorenzone/.nuget/NuGet/NuGet.Config"
       ],
       "originalTargetFrameworks": [
         "net6.0"
