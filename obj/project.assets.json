@@ -2058,19 +2058,23 @@
     ]
   },
   "packageFolders": {
-    "/Users/dylanmcfarlin/.nuget/packages/": {}
+    "/Users/scottmorenzone/.nuget/packages/": {},
+    "/usr/local/share/dotnet/sdk/NuGetFallbackFolder": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "/Users/dylanmcfarlin/Desktop/CodeStack/Level-3/getshitdone-backend/GetShitDoneBackend/GetShitDoneBackend.csproj",
+      "projectUniqueName": "/Users/scottmorenzone/Desktop/Codestack Academy/Level2/GetShitDoneBackend/GetShitDoneBackend.csproj",
       "projectName": "GetShitDoneBackend",
-      "projectPath": "/Users/dylanmcfarlin/Desktop/CodeStack/Level-3/getshitdone-backend/GetShitDoneBackend/GetShitDoneBackend.csproj",
-      "packagesPath": "/Users/dylanmcfarlin/.nuget/packages/",
-      "outputPath": "/Users/dylanmcfarlin/Desktop/CodeStack/Level-3/getshitdone-backend/GetShitDoneBackend/obj/",
+      "projectPath": "/Users/scottmorenzone/Desktop/Codestack Academy/Level2/GetShitDoneBackend/GetShitDoneBackend.csproj",
+      "packagesPath": "/Users/scottmorenzone/.nuget/packages/",
+      "outputPath": "/Users/scottmorenzone/Desktop/Codestack Academy/Level2/GetShitDoneBackend/obj/",
       "projectStyle": "PackageReference",
+      "fallbackFolders": [
+        "/usr/local/share/dotnet/sdk/NuGetFallbackFolder"
+      ],
       "configFilePaths": [
-        "/Users/dylanmcfarlin/.nuget/NuGet/NuGet.Config"
+        "/Users/scottmorenzone/.nuget/NuGet/NuGet.Config"
       ],
       "originalTargetFrameworks": [
         "net6.0"
