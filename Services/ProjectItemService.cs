@@ -85,7 +85,7 @@ namespace GetShitDoneBackend.Services
         }
 
         // Get a ProjectItem by a memberUsername
-        public IEnumerable<ProjectItemModel> GetProjectItemsByAMemberUsername(string memberUsername)
+        public List<ProjectItemModel> GetProjectItemsByAMemberUsername(string memberUsername)
         {
            //"Tag1, Tag2, Tag3,Tag4"
             List<ProjectItemModel> AllProjectsWithMemberUsername = new List<ProjectItemModel>();//[]

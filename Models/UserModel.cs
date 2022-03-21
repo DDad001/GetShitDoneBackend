@@ -15,6 +15,7 @@ namespace GetShitDoneBackend.Models
         public bool IsAdmin { get; set; }
         public bool IsProjectManager { get; set; }
         public bool IsSpecialist { get; set; }
+        public bool IsDeleted { get; set; }
         
         public UserModel(){}
     }
