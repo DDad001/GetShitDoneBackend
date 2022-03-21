@@ -18,4 +18,5 @@ namespace GetShitDoneBackend.Models
         
         public UserModel(){}
     }
+    
 }
