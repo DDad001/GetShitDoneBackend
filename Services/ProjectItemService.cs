@@ -105,7 +105,7 @@ namespace GetShitDoneBackend.Services
             }
             return AllProjectsWithMemberUsername;
         }
-
+        
         public IEnumerable<ProjectItemModel> GetDeletedProjectItems()
         {
             return _context.ProjectItemInfo.Where(item => item.IsDeleted);
